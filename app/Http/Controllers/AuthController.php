@@ -151,3 +151,26 @@ class AuthController extends Controller
         }
     }
 }
+// $eventpemilik = Event::leftjoin('tiket', 'event.id', '=', 'tiket.id_event')
+//                 ->join('kategorievent', 'event.id_kategorievent', '=', 'kategorievent.id')
+//                 ->select('event.*', 'tiket.id_kategoritiket AS id_kategoritiket', 'tiket.qty AS stok_tiket', 'kategorievent.nama AS id_kategorievent')
+//                 ->sum('tiket.qty')
+//                 ->groupBy(\DB::raw('event.*, tiket.id_kategoritiket AS id_kategoritiket, tiket.qty AS stok_tiket, kategorievent.nama AS id_kategorievent'))
+//                 // ->groupBy(\DB::raw('event.*', 'tiket.id_kategoritiket AS id_kategoritiket', 'tiket.qty AS stok_tiket', 'kategorievent.nama AS id_kategorievent'))
+//                 ->orderBy('id', 'desc')
+//                 ->where('id_pemilik', $pemilik->id)->get();
+
+// $eventpemilik = Event::leftjoin('tiket', 'event.id', '=', 'tiket.id_event')
+//                         ->join('kategorievent', 'event.id_kategorievent', '=', 'kategorievent.id')
+//                         ->sum(tiket.qty)
+//                         ->select('event.*', 'tiket.id_kategoritiket AS id_kategoritiket', 'tiket.qty AS stok_tiket', 'kategorievent.nama AS id_kategorievent')
+//                         ->orderBy('id', 'desc')
+//                         ->where('id_pemilik', $pemilik->id)->get();
+
+//  $eventpemilik = DB::table('event')
+//                     ->leftjoin('tiket', 'event.id', '=', 'tiket.id_event')
+//                     ->join('kategorievent', 'event.id_kategorievent', '=', 'kategorievent.id')
+//                     ->select(DB::raw('event.*, tiket.id_kategoritiket as id_kategoritiket, SUM(tiket.qty) as stok_tiket, kategorievent.nama as id_kategorievent'))
+//                     ->groupBy('status')
+//                     ->orderBy('id', 'desc')
+//                     ->where('id_pemilik', $pemilik->id)->get();

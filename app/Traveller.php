@@ -16,4 +16,5 @@ class Traveller extends Model
     public function getAgeAttribute()
     {
         return Carbon::parse($this->attributes['date_of_birth'])->age;
-    }}
+    }
+}

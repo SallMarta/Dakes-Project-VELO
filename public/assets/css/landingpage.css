@@ -59,7 +59,7 @@ body{
 
 .cool-link:hover::after {
   width: 100%;
-  //transition: width .3s;
+  /* //transition: width .3s; */
 }
 
 .navbar-toggler{
@@ -87,7 +87,7 @@ body{
 .glow-on:hover{
   border-color: #ffc107;
   color: #ffc107;
-  animation-name: 
+  /* animation-name:  */
 }
 
 .glow-on:focus{
