@@ -1,4 +1,4 @@
-# VELO
+# VELO | Let's Travel, Let's Go!
 <h3>by Dakes Project Team</h3>
 
 <p>The final project of the Web-Based Application Development course during the 3rd semester. This final project is a website application called Velo, a website application that helps travelers find friends to travel together.</p>
